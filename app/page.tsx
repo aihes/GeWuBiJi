@@ -135,7 +135,7 @@ export default function HomePage() {
       <section className="mt-20 pt-12 border-t border-gray-200">
         <blockquote className="text-center">
           <p className="text-lg italic text-gray-600 font-serif">
-            "知之愈明，则行之愈笃；行之愈笃，则知之益明。"
+            "            &ldquo;知之愈明，则行之愈笃；行之愈笃，则知之益明。&rdquo;"
           </p>
           <footer className="mt-4 text-sm text-gray-500">
             —— 朱熹《朱子语类》

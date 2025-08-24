@@ -49,7 +49,7 @@ export default function AboutPage() {
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
               欢迎来到我的数字花园！我是 AI贺贺，一个对技术充满热情的学习者和实践者。
-              "格物笔记"这个名字来源于古代哲学思想"格物致知"，代表着通过深入了解事物来获得真知的学习态度。
+              &ldquo;格物笔记&rdquo;这个名字来源于古代哲学思想&ldquo;格物致知&rdquo;，代表着通过深入了解事物来获得真知的学习态度。
             </p>
             <p>
               在这个快速变化的时代，我相信持续学习和分享是成长的最佳方式。
@@ -123,8 +123,8 @@ export default function AboutPage() {
           </h2>
           <div className="bg-primary-50 rounded-lg p-6 border-l-4 border-primary-500 mb-6">
             <blockquote className="text-gray-800 italic text-lg leading-relaxed font-medium">
-              "格物致知，知行合一。通过深入了解事物的本质来获得真知，
-              再将所学知识应用到实践中，形成完整的学习闭环。"
+              &ldquo;格物致知，知行合一。通过深入了解事物的本质来获得真知，
+              再将所学知识应用到实践中，形成完整的学习闭环。&rdquo;
             </blockquote>
           </div>
           <div className="space-y-4">
@@ -211,7 +211,7 @@ export default function AboutPage() {
       {/* 底部引用 */}
       <div className="text-center mt-16 pt-8 border-t border-gray-200">
         <blockquote className="text-lg italic text-gray-600 font-serif">
-          "学而时习之，不亦说乎？有朋自远方来，不亦乐乎？"
+          "          &ldquo;学而时习之，不亦说乎？有朋自远方来，不亦乐乎？&rdquo;"
         </blockquote>
         <footer className="mt-4 text-sm text-gray-500">
           —— 《论语》
