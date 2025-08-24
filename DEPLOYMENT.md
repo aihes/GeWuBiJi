@@ -6,40 +6,32 @@
 
 Vercel 是 Next.js 的官方推荐部署平台，提供最佳的性能和开发体验。
 
-### 步骤 1: 准备代码仓库
+### 快速部署步骤
 
-```bash
-# 初始化 Git 仓库
-git init
+1. **访问 Vercel**
+   - 打开 [https://vercel.com](https://vercel.com)
+   - 使用 GitHub 账号登录
 
-# 添加所有文件
-git add .
+2. **导入项目**
+   - 点击 "New Project"
+   - 选择 `aihes/GeWuBiJi` 仓库
+   - 点击 "Import"
 
-# 提交代码
-git commit -m "Initial commit: 格物笔记博客系统"
+3. **配置项目**
+   - **Framework Preset**: Next.js (自动检测)
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `.next`
+   - **Install Command**: `npm install`
 
-# 添加远程仓库（替换为您的 GitHub 仓库地址）
-git remote add origin https://github.com/your-username/gewubiji.git
+4. **设置环境变量**
+   ```
+   NEXT_PUBLIC_GA_ID = G-2H9RXMXW8T
+   ```
 
-# 推送到 GitHub
-git branch -M main
-git push -u origin main
-```
-
-### 步骤 2: 在 Vercel 上部署
-
-1. 访问 [vercel.com](https://vercel.com)
-2. 使用 GitHub 账号登录
-3. 点击 "New Project"
-4. 选择您的 `gewubiji` 仓库
-5. 配置项目设置：
-   - **Framework Preset**: Next.js
-   - **Root Directory**: `./` (默认)
-   - **Build Command**: `npm run build` (默认)
-   - **Output Directory**: `.next` (默认)
-   - **Install Command**: `npm install` (默认)
-
-6. 点击 "Deploy"
+5. **部署**
+   - 点击 "Deploy"
+   - 等待构建完成
+   - 获得部署 URL: `https://gewubiji.vercel.app`
 
 ### 步骤 3: 自定义域名（可选）
 
