@@ -1,8 +1,8 @@
-# 格物笔记 - AI贺贺的数字花园
+# 格物笔记 (GeWuBiJi)
 
-> 探究事物原理，获得真知。
+> 格物致知，知行合一 —— 记录学习心得与技术分享的个人博客
 
-这是一个基于 Next.js 14 构建的现代化个人博客系统，采用文件系统管理 Markdown 文章，具有优秀的性能和用户体验。
+一个基于 Next.js 14 构建的现代化个人博客系统，专注于技术分享和学习心得记录。
 
 ## ✨ 特性
 
@@ -159,8 +159,9 @@ MIT License
 
 **AI贺贺**
 
-- 博客：[格物笔记](https://gewubiji.vercel.app)
+- 博客：[格物笔记](https://github.com/aihes/GeWuBiJi)
 - GitHub: [@aihes](https://github.com/aihes)
+- X (Twitter): [@eric2000ai](https://x.com/eric2000ai)
 
 ---
 
