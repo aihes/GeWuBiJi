@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 导入 Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* 基础样式重置 */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-900 bg-white antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+  
+  /* 优化中文字体渲染 */
+  .font-serif {
+    font-family: 'Crimson Text', 'Noto Serif SC', 'Source Han Serif SC', serif;
+  }
+  
+  /* 标题样式 */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-semibold text-gray-900;
+    letter-spacing: -0.025em;
+  }
+  
+  /* 链接样式 */
+  a {
+    @apply text-primary-600 hover:text-primary-700 transition-colors duration-200;
+  }
+  
+  /* 选择文本样式 */
+  ::selection {
+    @apply bg-primary-100 text-primary-900;
+  }
+}
+
+/* 组件样式 */
+@layer components {
+  /* 文章卡片样式 */
+  .article-card {
+    @apply bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:border-primary-200;
+  }
+
+  .article-card h3 {
+    @apply text-gray-900;
+  }
+
+  .article-card p {
+    @apply text-gray-600;
+  }
+
+  .article-card time {
+    @apply text-gray-500;
+  }
+  
+  /* 导航样式 */
+  .nav-link {
+    @apply text-gray-600 hover:text-gray-900 font-medium transition-colors duration-200;
+  }
+  
+  /* 按钮样式 */
+  .btn-primary {
+    @apply bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors duration-200 font-medium;
+  }
+  
+  /* 标签样式 */
+  .tag {
+    @apply inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-primary-100 hover:text-primary-700 transition-colors duration-200;
+  }
+}
+
+/* 工具类 */
+@layer utilities {
+  /* 渐变文本 */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+  }
+  
+  /* 容器最大宽度 */
+  .container-prose {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* 文章内容样式增强 */
+  .prose-enhanced {
+    @apply prose prose-lg lg:prose-xl prose-gray max-w-none;
+  }
+  
+  .prose-enhanced h1,
+  .prose-enhanced h2,
+  .prose-enhanced h3 {
+    @apply font-serif;
+  }
+  
+  .prose-enhanced blockquote {
+    @apply border-l-4 border-primary-500 bg-primary-50 py-2 px-4 my-6 rounded-r-md;
+  }
+  
+  .prose-enhanced code {
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+  }
+  
+  .prose-enhanced pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto;
+  }
+  
+  .prose-enhanced pre code {
+    @apply bg-transparent text-inherit p-0;
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 640px) {
+  .prose-enhanced {
+    @apply prose-base;
+  }
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+
+  .article-card {
+    @apply bg-gray-800 border-gray-700 hover:border-primary-400;
+  }
+
+  .article-card h3 {
+    @apply text-gray-100;
+  }
+
+  .article-card p {
+    @apply text-gray-300;
+  }
+
+  .article-card time {
+    @apply text-gray-400;
+  }
+
+  .tag {
+    @apply bg-gray-700 text-gray-300 hover:bg-primary-800 hover:text-primary-200;
+  }
+
+  .prose-enhanced {
+    @apply prose-invert;
+  }
+
+  .prose-enhanced blockquote {
+    @apply bg-primary-900 border-primary-400;
+  }
+
+  .prose-enhanced code {
+    @apply bg-gray-800 text-gray-200;
+  }
+}
