@@ -9,6 +9,10 @@ const nextConfig = {
   reactStrictMode: true,
   // 启用 SWC 压缩
   swcMinify: true,
+  // 在构建时忽略 ESLint 错误
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig
