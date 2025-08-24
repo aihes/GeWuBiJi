@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   title: {
@@ -152,6 +153,8 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        {/* Google Analytics */}
+        <GoogleAnalytics />
       </body>
     </html>
   )
