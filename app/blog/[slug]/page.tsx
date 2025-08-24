@@ -130,7 +130,7 @@ export default async function PostPage({
       </header>
 
       {/* 文章内容 */}
-      <article className="prose prose-lg lg:prose-xl prose-gray max-w-none prose-headings:font-serif prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-strong:text-gray-900 prose-code:text-gray-800 prose-code:bg-gray-100 prose-pre:bg-gray-900 prose-blockquote:border-primary-500 prose-blockquote:bg-primary-50 prose-blockquote:text-gray-700">
+      <article className="prose prose-lg lg:prose-xl prose-gray max-w-none prose-headings:font-serif prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-strong:text-gray-900 prose-code:text-gray-200 prose-code:bg-gray-800 prose-pre:bg-slate-900 prose-blockquote:border-primary-500 prose-blockquote:bg-primary-50 prose-blockquote:text-gray-700 prose-a:text-primary-600 hover:prose-a:text-primary-700">
         <div
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
